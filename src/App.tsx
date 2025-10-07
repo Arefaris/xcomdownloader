@@ -43,17 +43,21 @@ function App() {
 
 	return (
 		<>
-			<h1>Simple x.com downloader</h1>
-			<h2>Paste your link</h2>
+			<div className="hero-cont">
+				<h1 className="title">Download <span className="tw-h-hilight">Twitter Videos</span> </h1>
+				<h1 className="second-title-line">in Seconds</h1>
+				<h3 className="description-hero">The fastest and easiest way to download videos from Twitter/X. No sign-up required. HD quality. Always free.</h3>
 
-			<input placeholder='x.com url' ref={userUrlRef}></input>
+				<input className='main-input' placeholder='Paste Twitter/X video URL here...' ref={userUrlRef}></input>
 
-			<button onClick={handleFetch} disabled={loading}>
-				{loading ? 'Loading...' : 'Download Video'}
+				<button className='input-btn' onClick={handleFetch} disabled={loading}>
+					{loading ? 'Loading...' : 'Download Video'}
 			</button>
-
+			<h6>Supports all Twitter/X video formats • No watermarks • Lightning fast</h6>
+			</div>		
+			
 			{error && (
-				<p style={{ color: 'red' }}>{error}</p>
+				<p className="error-message">{error}</p>
 			)}
 
 			{videoUrl && (

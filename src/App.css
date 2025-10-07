@@ -1,42 +1,193 @@
 #root {
-  max-width: 1280px;
+
   margin: 0 auto;
-  padding: 2rem;
+
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+* {
+  box-sizing: border-box;
 }
 
-@keyframes logo-spin {
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ 
+  background: linear-gradient(135deg, rgba(168, 192, 255, 0.1) 0%, rgba(255, 255, 255, 0) 50%, rgba(63, 43, 150, 0.08) 100%);
+
+}
+
+.title {
+ font-weight: bold;
+  font-size: 52px;
+  margin-bottom: 0px;
+}
+
+.second-title-line {
+  font-weight: bold;
+  font-size: 52px;
+  margin: 0;
+}
+
+.tw-h-hilight {
+  background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+h6 {
+  color: grey;
+}
+
+.main-input {
+  width: 70%;
+  border-radius: 15px;
+  height: 50px;
+  padding-left: 15px;
+
+}
+
+.input-btn {
+  background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+  margin-left: 5px;
+  height: 50px;
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(63, 43, 150, 0.3);
+}
+
+.main-input:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(63, 43, 150, 0.4);
+}
+
+.input-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(63, 43, 150, 0.4);
+}
+
+.input-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(63, 43, 150, 0.3);
+}
+
+
+.main-input:focus {
+  border: 3px solid #A8C0FF; /* border при фокусе */
+  outline: none; /* убрать стандартный outline */
+}
+
+.error-message {
+  background: linear-gradient(135deg, rgba(168, 192, 255, 0.1) 0%, rgba(63, 43, 150, 0.1) 100%);
+  border: 2px solid rgba(168, 192, 255, 0.4);
+  border-radius: 15px;
+  padding: 15px 20px;
+  margin-top: 20px;
+  color: lightcoral;
+  font-weight: 500;
+  box-shadow: 0 4px 15px rgba(63, 43, 150, 0.1);
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(-10px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+/* Tablet и меньше */
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .second-title-line {
+    font-size: 36px;
+  }
+
+  .description-hero {
+    font-size: 14px;
+  }
+
+  .main-input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .input-btn {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  h6 {
+    font-size: 12px;
+  }
+
+  .error-message {
+    font-size: 14px;
+    padding: 12px 15px;
   }
 }
 
-.card {
-  padding: 2em;
-}
+/* Мобильные устройства */
+@media (max-width: 480px) {
+  body {
+    height: auto;
+    min-height: 100vh;
+    padding: 20px 0;
+  }
 
-.read-the-docs {
-  color: #888;
+  .title {
+    font-size: 28px;
+  }
+
+  .second-title-line {
+    font-size: 28px;
+  }
+
+  .description-hero {
+    font-size: 13px;
+    padding: 0 10px;
+  }
+
+  .main-input {
+    height: 45px;
+    font-size: 14px;
+    padding-left: 12px;
+  }
+
+  .input-btn {
+    height: 45px;
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  h6 {
+    font-size: 11px;
+    padding: 0 10px;
+  }
+
+  .error-message {
+    font-size: 13px;
+    padding: 10px 12px;
+    margin-top: 15px;
+  }
 }
