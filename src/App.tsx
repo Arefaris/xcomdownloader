@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react'
 import './App.css'
 import { fetchTwitterMedia } from './twitterFetcher'
-import Faq from './components/faq';
+import Faq from './components/Faq';
 import WhyChooseUs from './components/WhyChooseUs';
 import Footer from './components/Footer';
 function App() {
