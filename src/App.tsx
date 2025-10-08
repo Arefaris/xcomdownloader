@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react'
 import './App.css'
 import { fetchTwitterMedia } from './twitterFetcher'
+import Faq from './components/faq';
 
 function App() {
 	const [videoUrl, setVideoUrl] = useState<string>("");
@@ -63,6 +64,8 @@ function App() {
 			{videoUrl && (
 				window.open(videoUrl, '_blank')?.focus()
 			)}
+			<br></br>
+			<Faq></Faq>
 		</>
 	)
 }

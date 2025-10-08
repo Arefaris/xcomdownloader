@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@szhsin/react-accordion": "^1.4.1",
     "get-twitter-media": "^2.0.8",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
