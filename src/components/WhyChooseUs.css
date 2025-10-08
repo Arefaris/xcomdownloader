@@ -1,0 +1,125 @@
+.why-choose-us {
+	max-width: 1200px;
+	margin: 60px auto;
+	padding: 0 20px;
+	text-align: center;
+}
+
+.why-header {
+	font-size: 48px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.why-header-highlight {
+	background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+.why-subtitle {
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 18px;
+	margin-bottom: 50px;
+}
+
+.features-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 25px;
+	margin-top: 40px;
+}
+
+.feature-card {
+	background: linear-gradient(135deg, rgba(168, 192, 255, 0.05) 0%, rgba(63, 43, 150, 0.05) 100%);
+	border: 2px solid rgba(168, 192, 255, 0.2);
+	border-radius: 15px;
+	padding: 30px 25px;
+	transition: all 0.3s ease;
+	text-align: left;
+}
+
+.feature-card:hover {
+	border-color: rgba(168, 192, 255, 0.4);
+	box-shadow: 0 6px 20px rgba(63, 43, 150, 0.15);
+	transform: translateY(-5px);
+}
+
+.feature-title {
+	font-size: 22px;
+	font-weight: 600;
+	margin-bottom: 12px;
+	background: linear-gradient(90deg, #b2a1fc 0%, #A8C0FF 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+.feature-description {
+	color: rgba(255, 255, 255, 0.7);
+	line-height: 1.6;
+	font-size: 16px;
+	margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	.why-choose-us {
+		margin: 40px auto;
+	}
+
+	.why-header {
+		font-size: 36px;
+	}
+
+	.why-subtitle {
+		font-size: 16px;
+		margin-bottom: 35px;
+	}
+
+	.features-grid {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+
+	.feature-card {
+		padding: 25px 20px;
+	}
+
+	.feature-title {
+		font-size: 20px;
+	}
+
+	.feature-description {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 480px) {
+	.why-choose-us {
+		margin: 30px auto;
+		padding: 0 15px;
+	}
+
+	.why-header {
+		font-size: 28px;
+	}
+
+	.why-subtitle {
+		font-size: 14px;
+		margin-bottom: 30px;
+	}
+
+	.feature-card {
+		padding: 20px 15px;
+	}
+
+	.feature-title {
+		font-size: 18px;
+	}
+
+	.feature-description {
+		font-size: 14px;
+	}
+}

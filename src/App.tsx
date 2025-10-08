@@ -2,7 +2,7 @@ import { useRef, useState } from 'react'
 import './App.css'
 import { fetchTwitterMedia } from './twitterFetcher'
 import Faq from './components/faq';
-
+import WhyChooseUs from './components/WhyChooseUs';
 function App() {
 	const [videoUrl, setVideoUrl] = useState<string>("");
 	const userUrlRef = useRef<HTMLInputElement>(null)
@@ -65,7 +65,9 @@ function App() {
 				window.open(videoUrl, '_blank')?.focus()
 			)}
 			<br></br>
+			<WhyChooseUs></WhyChooseUs>
 			<Faq></Faq>
+			
 		</>
 	)
 }
