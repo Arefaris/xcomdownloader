@@ -1,4 +1,3 @@
-import React from 'react'
 import "./Faq.css"
 import { Accordion, AccordionItem } from '@szhsin/react-accordion';
 
