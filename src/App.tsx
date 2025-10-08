@@ -3,6 +3,7 @@ import './App.css'
 import { fetchTwitterMedia } from './twitterFetcher'
 import Faq from './components/faq';
 import WhyChooseUs from './components/WhyChooseUs';
+import Footer from './components/Footer';
 function App() {
 	const [videoUrl, setVideoUrl] = useState<string>("");
 	const userUrlRef = useRef<HTMLInputElement>(null)
@@ -67,6 +68,7 @@ function App() {
 			<br></br>
 			<WhyChooseUs></WhyChooseUs>
 			<Faq></Faq>
+			<Footer></Footer>
 			
 		</>
 	)
