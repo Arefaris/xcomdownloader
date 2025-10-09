@@ -37,7 +37,8 @@ body{
 }
 
 
-h6 {
+h6,
+.features-text {
   color: grey;
 }
 

@@ -63,31 +63,46 @@ function App() {
 
 	return (
 		<>
-			<div className="hero-cont">
-				<h1 className="title">Download <span className="tw-h-hilight">Twitter Videos</span> </h1>
-				<h1 className="second-title-line">in Seconds</h1>
-				<h3 className="description-hero">The fastest and easiest way to download videos from Twitter/X. No sign-up required. HD quality. Always free.</h3>
+			<header>
+				<section className="hero-cont">
+					<h1 className="title">Download <span className="tw-h-hilight">Twitter Videos</span> </h1>
+					<h2 className="second-title-line">in Seconds</h2>
+					<p className="description-hero">The fastest and easiest way to download videos from Twitter/X. No sign-up required. HD quality. Always free.</p>
 
-				<input className='main-input' placeholder='Paste Twitter/X video URL here...' ref={userUrlRef}></input>
+					<input
+						className='main-input'
+						placeholder='Paste Twitter/X video URL here...'
+						ref={userUrlRef}
+						aria-label="Twitter video URL input"
+						type="text"
+					/>
 
-				<button className='input-btn' onClick={handleFetch} disabled={loading}>
-					{loading ? 'Loading...' : 'Download Video'}
-			</button>
-			<h6>Supports all Twitter/X video formats • No watermarks • Lightning fast</h6>
-			</div>		
-			
+					<button
+						className='input-btn'
+						onClick={handleFetch}
+						disabled={loading}
+						aria-label="Download Twitter video"
+					>
+						{loading ? 'Loading...' : 'Download Video'}
+					</button>
+					<p className="features-text">Supports all Twitter/X video formats • No watermarks • Lightning fast</p>
+				</section>
+			</header>
+
 			{error && (
-				<p className="error-message">{error}</p>
+				<p className="error-message" role="alert">{error}</p>
 			)}
 
 			{videoUrl && (
 				window.open(videoUrl, '_blank')?.focus()
 			)}
-			<br></br>
-			<WhyChooseUs></WhyChooseUs>
-			<Faq></Faq>
-			<Footer></Footer>
-			
+
+			<main>
+				<WhyChooseUs />
+				<Faq />
+			</main>
+
+			<Footer />
 		</>
 	)
 }
