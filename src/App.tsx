@@ -4,6 +4,7 @@ import { fetchTwitterMedia } from './twitterFetcher'
 import { trackPageView, trackEvent } from './analytics'
 import Faq from './components/Faq';
 import WhyChooseUs from './components/WhyChooseUs';
+import QuickTip from './components/QuickTip';
 import Footer from './components/Footer';
 function App() {
 
@@ -99,6 +100,7 @@ function App() {
 
 			<main>
 				<WhyChooseUs />
+				<QuickTip />
 				<Faq />
 			</main>
 

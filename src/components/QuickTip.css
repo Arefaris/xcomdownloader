@@ -1,0 +1,120 @@
+.quick-tip {
+	width: 100%;
+	padding: 2rem 1rem;
+	margin: 2rem 0;
+}
+
+.quick-tip-container {
+	max-width: 800px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1.5rem;
+
+}
+
+
+
+
+.tip-content {
+	color: white;
+}
+
+.tip-title {
+	margin: 0 0 0.5rem 0;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: white;
+}
+
+.tip-description {
+	margin: 0 0 1rem 0;
+	font-size: 1.1rem;
+	line-height: 1.6;
+	color: rgba(255, 255, 255, 0.95);
+}
+
+.tip-code {
+	background: rgba(0, 0, 0, 0.3);
+	padding: 0.2rem 0.5rem;
+	border-radius: 4px;
+	font-family: 'Courier New', monospace;
+	font-weight: 600;
+	color: #B2A2FC;
+	font-size: 1rem;
+}
+
+.tip-example {
+	background: linear-gradient(135deg, rgba(168, 192, 255, 0.05) 0%, rgba(63, 43, 150, 0.05) 100%);
+	padding: 1rem;
+	border-radius: 8px;
+	margin-top: 1rem;
+}
+
+.example-label {
+	font-size: 0.9rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	color: rgba(255, 255, 255, 0.9);
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.example-urls {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	flex-wrap: wrap;
+}
+
+.example-url {
+	font-family: 'Courier New', monospace;
+	font-size: 0.95rem;
+	padding: 0.5rem 0.75rem;
+	border-radius: 6px;
+	background: rgba(0, 0, 0, 0.3);
+	color: white;
+}
+
+.example-url.modified {
+	color: #B2A2FC;
+	font-weight: 600;
+	
+}
+
+.arrow {
+	font-size: 1.5rem;
+	color: #B2A2FC;
+	font-weight: bold;
+}
+
+@media (max-width: 768px) {
+	.quick-tip-container {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 1.5rem;
+	}
+
+	.tip-icon {
+		font-size: 2.5rem;
+	}
+
+	.tip-title {
+		font-size: 1.25rem;
+	}
+
+	.tip-description {
+		font-size: 1rem;
+	}
+
+	.example-urls {
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.arrow {
+		transform: rotate(90deg);
+	}
+}
