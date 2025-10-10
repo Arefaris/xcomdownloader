@@ -1,8 +1,8 @@
 #root {
-
   margin: 0 auto;
-
   text-align: center;
+  width: 100%;
+  max-width: 100%;
 }
 
 * {
@@ -14,7 +14,8 @@ body{
   justify-content: center;
   align-items: center;
   background: linear-gradient(135deg, rgba(168, 192, 255, 0.1) 0%, rgba(255, 255, 255, 0) 50%, rgba(63, 43, 150, 0.08) 100%);
-
+  width: 100%;
+  max-width: 100%;
 }
 
 .title {

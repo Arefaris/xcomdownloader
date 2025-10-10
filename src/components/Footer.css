@@ -1,6 +1,5 @@
 .footer {
-	width: 100vw;
-	margin-left: calc(-50vw + 50%);
+	width: 100%;
 	margin-top: 80px;
 	padding: 40px 20px 30px;
 	background: linear-gradient(135deg, rgba(168, 192, 255, 0.03) 0%, rgba(63, 43, 150, 0.03) 100%);
