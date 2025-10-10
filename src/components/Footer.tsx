@@ -3,8 +3,8 @@ export default function Footer() {
 	return (
 		<footer className="footer">
 			<div className="footer-content">
-				<div className="footer-disclaimer">
-					<p>
+				<div className="footer-info">
+					<p className="footer-text">
 						We operate as a linking service that connects you directly to Twitter's content delivery network.
 						No video files are stored on our servers - all downloads come straight from Twitter's official CDN.
 						We respect intellectual property rights and do not facilitate or encourage copyright infringement.

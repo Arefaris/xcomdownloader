@@ -11,17 +11,20 @@
 	margin: 0 auto;
 }
 
-.footer-disclaimer {
+.footer-info {
 	text-align: center;
 	margin-bottom: 30px;
 }
 
-.footer-disclaimer p {
-	color: rgba(255, 255, 255, 0.6);
+.footer-text {
+	color: rgba(255, 255, 255, 0.85) !important;
 	font-size: 14px;
 	line-height: 1.8;
 	max-width: 800px;
 	margin: 0 auto;
+	display: block !important;
+	visibility: visible !important;
+	opacity: 1 !important;
 }
 
 .footer-bottom {
@@ -63,7 +66,7 @@
 		padding: 30px 20px 25px;
 	}
 
-	.footer-disclaimer p {
+	.footer-text {
 		font-size: 13px;
 	}
 
@@ -85,7 +88,7 @@
 		padding: 25px 15px 20px;
 	}
 
-	.footer-disclaimer p {
+	.footer-text {
 		font-size: 12px;
 		line-height: 1.6;
 	}
